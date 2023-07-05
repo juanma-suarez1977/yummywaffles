@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Document</title>
+</head>
+
+
+
+<body>
+
+    <div class="container-nav">
+
+        <nav class="navbar" role="navigation">
+        
+            <a href="index.html" class="brand">Yummy Waffles</a>
+           
+            <ul class="nav-links">
+                           
+                    <li><a href="principal.html">Principal</a></li>
+                    <li><a href="historia.html">Historia</a></li>
+                    <li><a href="ubicacion.html">Ubicación del FoodTruck</a></li>
+                    <li><a href="menuwaffles.html">Menú de Waffles</a></li>
+                    <li><a href="menucafeteria.html">Menú de Cafetería</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+               
+            </ul>
+        
+        </nav>
+       
+    </div>
+
+    <div>
+
+        <header style="font-size: x-large; text-align: center;">
+
+            <h1>FORMULARIO DE CONTACTO</h1>
+        
+        </header>
+        
+        <form id="formulario1">
+        
+            <br><br><br>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="nombre" required><br><br>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" placeholder="apellido" required><br><br>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" placeholder="telefono" required><br><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="email" required><br><br>
+
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asunto" name="asunto" placeholder="consulta que desea hacer" required><br><br>
+
+            <label for="motivo">Motivo:</label>
+            <select name="motivo" onchange="if(this.value=='otros'){document.getElementById('otroscampo').style.display='block'}else{document.getElementById('otroscampo').style.display='none'}">
+
+                <option selected disabled >Seleccionar</option>
+                <option>Eventos</option>
+                <option>Alquiler</option>
+                <option>YummyBox</option>
+                <option>Waffles Congelados</option>
+                <option value="otros">Otros</option>
+            
+            </select><br><br>
+
+            <div id="otroscampo" style="display:none;">
+
+                <label for="otrostexto">Escribe tu opción:</label>
+                <input type="text" id="otrostexto" name="otrostexto">
+
+            </div><br><br>
+
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea><br><br>
+
+            <label for="archivo">Archivo Adjunto</label>
+            <input type="file" name="archivo" id="archivo"><br><br>
+    
+</body>
+</html>

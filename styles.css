@@ -1,0 +1,416 @@
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+    background-color: yellow;
+    margin: 5px;
+    padding: 5px;
+}
+/*barra naranja con borde negro*/
+.container-nav {
+
+    display: flex;
+    padding: 10px;
+    height: 50px;
+    width: auto;
+    background-color: orange;
+    margin-bottom: 30px;
+   
+
+  }
+
+  .navbar {
+    
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+  }
+
+  .brand {
+
+    display: flex;
+    align-items: center;
+    
+  }
+
+  .nav-links {
+
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+
+  }
+
+
+.imagenes {
+
+    display: flex;
+    margin:auto;
+    padding: 10px;
+    width: 25%;
+    height: 25%;
+    box-shadow: 15px 15px 10px rgb(197, 185, 115);
+}
+
+li>a {
+
+    padding: 8px 24px;
+
+  }
+
+  li {
+
+    list-style-type: none;
+
+  }
+
+  a {
+  
+    color: black;
+    text-decoration:none;
+  
+    }
+
+#formulario1 {
+
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.pie {
+
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black ;
+    margin: 100px;
+    padding: 10px;
+
+}
+
+.imagen-logos {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;    
+    
+}
+
+
+.contacto {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    font-size: large;
+
+}
+
+.mail-parrafo {
+
+    margin: 20px;
+    font-size: 150%;
+    
+}
+
+.waffles {
+
+    display: flex;
+    flex-direction: column;
+    background-color: orange; 
+    font-size: large;    
+    flex-wrap: wrap;
+    border: solid 2px;
+    align-content: space-evenly;
+    margin-bottom: 10px;
+
+}  
+
+.dulces {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: yellow;    
+    border: solid 1px;
+    margin-bottom: 10px;
+
+}
+
+.waffles1 {
+
+  display: flex;
+  background-color: brown;
+  flex-direction: column;
+  font-size: large;
+  flex-wrap: wrap;
+  border: solid 2px;
+  align-content: space-evenly;
+  margin-bottom: 10px;
+
+}
+
+.salados {
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: solid 1px;
+  align-items: center;
+  background-color: orange;
+  margin-bottom: 10px;
+
+}
+
+.titulo {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: larger;
+  font-family: cursive;
+  font-style: italic;
+ 
+}
+
+.imagen-waffle-dulce {
+
+  width: 50%;
+  border-radius: 15px;
+  box-shadow: 15px 15px 10px rgb(197, 185, 115);
+
+}
+
+.imagen-waffle-salado{
+
+  width: 50%;
+  border-radius: 15px;
+  box-shadow: 15px 15px 10px rgb(197, 185, 115);
+
+}
+
+.waffles-dulces-1 {
+
+  display: grid;
+  grid-template-columns: 600px 600px 600px 600px;
+  grid-template-rows: 375px 375px;
+ 
+   
+}
+
+.clasico {
+
+ border: solid 2px black;
+ 
+ 
+
+}
+
+.frutal {
+
+  border: solid 2px black;
+
+}
+
+.nutella {
+
+  border: solid 2px black;
+
+}
+
+.block {
+
+  border: solid 2px black;
+
+}
+
+.bonobon {
+
+  border: solid 2px black;
+
+}
+
+.nutella-frutal {
+
+  border: solid 2px black;
+
+}
+
+.block-frutal {
+
+  border: solid 2px black;
+
+
+}
+
+.bonobon-frutal {
+
+  border: solid 2px black;
+
+
+}
+
+.yummy {
+
+  border: solid 2px black;
+
+
+}
+
+.miBoton {
+
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+
+}
+
+.tabla-waffles {
+
+  
+  border: solid 1px;
+  
+  background-color: orange;
+  width: 50%;
+  
+
+}
+
+.inicio-sesion-0 {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: aqua;
+  margin: auto;
+  max-width: 400px;
+  padding: 15px;
+  box-shadow: 5px 5px 20px gray;
+  border-radius: 10px;
+
+}
+
+.inicio-sesion {
+
+  margin: 10px 10px 10px 10px;
+  text-align: center;
+
+
+}
+
+.inicio-sesion-boton {
+
+  background-color: orange;
+  box-shadow: 0px 0px 10px gray;
+  text-align: center;
+  width: 50%;
+  align-self: center;
+
+
+}
+
+.cont {
+
+  display: grid;
+  margin-left: 150px;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+  gap: 10px;
+  grid-template-areas: "item1 item2 item3" "item4 item5 item6" "item7 item8 item9";
+  
+
+}
+
+.item1 {
+
+  grid-area: item1;
+  
+  
+  
+}
+
+.item2 {
+
+  grid-area: item2;
+
+}
+
+.item3 {
+
+  grid-area: item3;
+
+}
+
+.item4 {
+
+  grid-area: item4;
+
+}
+
+.item5 {
+
+  grid-area: item5;
+
+}
+
+.item6 {
+
+  grid-area: item6;
+
+}
+
+.item7 {
+
+  grid-area: item7;
+
+}
+
+.item8 {
+
+  grid-area: item8;
+
+}
+
+.item9 {
+
+  grid-area: item9;
+
+}
+
+.imagen-grid:hover {
+
+  transition: 0.5s;
+  scale: 1.5;
+
+}
+
+.imagen-grid1:active {
+
+  transition: 0.5s;
+  scale: 1.5;
+
+}
+/*
+.waffles-dulces2 {
+
+  display: grid;
+  grid-auto-flow: row;
+
+}
+
+/*.waffles-dulces3 {
+
+  display: flex;
+  flex-direction: ;
+*/
+
