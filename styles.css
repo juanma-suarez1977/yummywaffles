@@ -456,20 +456,19 @@ a {
 .atras {
 
   transform: rotateY(180deg);
+  border-radius: 19px;
 
 }
 
-.carta-menu {
+.carta-menu-wcd {
    
-  
-  
+  margin-left: 250px;
+  margin-top: 100px;
   perspective: 10000px;
   width: 300px;
   height: 500px;
   position: relative;
-  border: 2px solid black;
-  background-color: rgb(219, 123, 39);
-  border-radius: 20px;
+
 }
 
 .carta {
@@ -482,13 +481,13 @@ a {
 
 }
 
-.carta-menu:hover .frente {
+.carta-menu-wcd:hover .frente {
 
   transform: rotateY(180deg);
 
 }
 
-.carta-menu:hover .atras {
+.carta-menu-wcd:hover .atras {
 
   transform: rotateY(0deg);
 
@@ -496,9 +495,10 @@ a {
 
 .atras h1{
 
+  margin-left: 80%;
   position: absolute;
-  top:300px;
-  margin-left: 30px;
+  color:brown;
+  
 
 }
 
@@ -527,5 +527,72 @@ a {
 
 }
 
+.frente {
 
+  background-color: rgb(219, 123, 39);
+  border-radius: 19px;
+
+}
+
+.general {
+
+  display: grid;
+  grid-template-columns: repeat(8,1fr);
+  grid-template-rows: repeat(5,1fr);
+  grid-template-areas: "a a a a c c c c" "a a a a c c c c" "a a a a c c c c" "a a a a c c c c" "f g h i c c c c";
+  gap: 10px;
+  margin-top: 100px;
+}
+
+.imagen-class {
+
+  width: 500px;
+  height: 500px;
+
+}
+
+.imagen1-1 {
+
+  grid-area: f;
+ 
+}
+
+.imagen2-2 {
+
+  grid-area: g;
+
+}
+.imagen3-3 {
+
+  grid-area: h;
+
+}
+.imagen4-4 {
+
+  grid-area: i;
+
+}
+
+.imagen-grande {
+
+  grid-area: a;
+ 
+
+}
+
+.imagen-grande>img {
+
+
+  width: 100%;
+
+}
+
+.imagen-info {
+
+  background-color: red;
+  grid-area: c;
+
+}
+
+ 
 
